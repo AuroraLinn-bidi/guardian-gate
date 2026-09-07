@@ -1,8 +1,8 @@
-🛡️ Guardian Gate
+## 🛡️ Guardian Gate
 
 An embedded security and monitoring system designed to detect human presence and identify potential intrusion using ultrasonic sensors, physical buttons, LED/buzzer alerts, and Telegram notifications.
 
-📌 Project Overview
+## 📌 Project Overview
 
 Guardian Gate is an embedded systems project that combines hardware sensors with Python-based control logic to provide a simple automated security monitoring system.
 
@@ -10,7 +10,7 @@ The system monitors the area near a protected entrance using two ultrasonic sens
 
 The system can also be manually switched between ACTIVE and STOPPED modes using an arm/disarm button.
 
-✨ Features
+## ✨ Features
 
 * 🔊 Dual ultrasonic sensor monitoring
 * 👤 Human presence detection
@@ -22,7 +22,7 @@ The system can also be manually switched between ACTIVE and STOPPED modes using 
 * 🐍 Python-based control program
 * 🔧 GrovePi hardware integration
 
- 🛠️ Technologies
+##  🛠️ Technologies
 
 * Python
 * GrovePi
@@ -33,7 +33,7 @@ The system can also be manually switched between ACTIVE and STOPPED modes using 
 * Buzzer
 * Telegram Bot API
 
-🔌 Hardware Components
+## 🔌 Hardware Components
 
 | Component                       | Quantity | Purpose                           |
 | ------------------------------- | -------: | --------------------------------- |
@@ -45,7 +45,7 @@ The system can also be manually switched between ACTIVE and STOPPED modes using 
 | GrovePi                         |        1 | Hardware interface                |
 | Raspberry Pi / Compatible Board |        1 | Runs the Python program           |
 
- ⚙️ System Logic
+ ## ⚙️ System Logic
 
 
                     Guardian Gate
@@ -86,7 +86,7 @@ The system can also be manually switched between ACTIVE and STOPPED modes using 
              └──── Continue Monitoring
 
 
- 📂 Project Structure
+ ## 📂 Project Structure
 
 guardian-gate/
 │
@@ -98,7 +98,7 @@ guardian-gate/
     └── guardian_gate.py
 
 
-🚀 Installation
+## 🚀 Installation
 
 Clone the repository:
 git clone https://github.com/AuroaLinn-bidi/guardian-gate.git
@@ -109,7 +109,7 @@ cd guardian-gate
 Install the required Python packages:
 pip install -r requirements.txt
 
-🔐 Telegram Configuration
+## 🔐 Telegram Configuration
 
 Telegram credentials are intentionally not stored in the source code.
 
@@ -119,7 +119,7 @@ TELEGRAM_CHAT_ID
 
 Configure these variables on the device running the Guardian Gate system before starting the application.
 
- ▶️ Running the System
+ ## ▶️ Running the System
 
 Run the main Python program:
 python src/guardian_gate.py
@@ -128,16 +128,14 @@ The system starts in the STOPPED state.
 
 Press the Arm/Disarm button to activate monitoring.
 
-📱 Notification Behavior
+## 📱 Notification Behavior
 
-When the system is active:
- Human Presence
+When the system is active: "Human Presence"
 
-If both ultrasonic sensors detect a nearby object within the configured distance, the system sends:
-"Someone is in front of the door."
+If both ultrasonic sensors detect a nearby object within the configured distance, the system sends: "Someone is in front of the door."
 
 
-Confirmed Intrusion
+## Confirmed Intrusion
 
 If human presence is detected together with either security button being pressed, the system:
 
@@ -147,24 +145,42 @@ If human presence is detected together with either security button being pressed
 4. Keeps the alarm active for the configured duration.
 5. Turns the LED and buzzer off.
 
-⚠️ Hardware Requirement
+## ⚠️ Hardware Requirement
 
 This project depends on physical embedded hardware and cannot be fully tested using a normal PC alone.
 
 The repository contains the Python source code, software dependencies, and project documentation. The complete system requires the corresponding GrovePi-compatible hardware and connected sensors/actuators.
 
-🔒 Security
+## 🔒 Security
 
 Sensitive Telegram credentials should never be committed to GitHub.
-
 The project uses environment variables instead of storing the Telegram bot token directly in the source code.
 
-📌 Project Status
-
+## 📌 Project Status
 Completed — Academic Embedded Systems Project
 
-👩‍💻 Author
+## 👥 Team Project
 
+Guardian Gate was developed as a collaborative academic embedded systems project. The project combined software development, hardware implementation, and system integration.
+
+### My Contribution
+
+**Role: Hardware Team Member**
+
+I contributed to the hardware implementation and integration of the Guardian Gate system, including:
+* Hardware component setup and wiring
+* Ultrasonic sensor integration
+* Button input integration
+* LED and buzzer integration
+* Hardware testing and troubleshooting
+* Integration of the hardware components with the Python control program
+
+### Team Collaboration
+
+The project was completed collaboratively with other team members responsible for different areas of the system, including software development, hardware implementation, testing, and documentation.
+
+
+👩‍💻 Author
 A Mi Mi Soe
 
 Software Engineering Student
