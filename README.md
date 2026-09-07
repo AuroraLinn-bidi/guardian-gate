@@ -101,7 +101,7 @@ guardian-gate/
 🚀 Installation
 
 Clone the repository:
-git clone https://github.com/YOUR_USERNAME/guardian-gate.git
+git clone https://github.com/AuroaLinn-bidi/guardian-gate.git
 
 Move into the project directory:
 cd guardian-gate
